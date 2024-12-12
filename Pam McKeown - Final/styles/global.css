@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap');
+
+* {
+
+    box-sizing: border-box;
+    
+    }
+
+html{
+    color: #eb2fac;
+    background-color: #fcff44;
+    /* font-size: 30px; */
+    font-size: 1em;
+    word-spacing: 10px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    /* font-family:  'Roboto', sans-serif; */
+}
+
+body {
+
+    margin: 0 auto;
+    
+    min-width: 320px;
+    
+    /* display: flex;
+    
+    flex-direction: column;
+    
+    flex-wrap: nowrap;
+    
+    align-items: stretch; */
+    
+    }
+
+
+#nav{
+    font-size: 25px;
+    padding: 30px;   
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #ff9100;
+}
+
+
+
+    #nav li{
+        display: inline;
+        margin-left: 30px;
+        margin-right: 30px; 
+        font-weight: bold;
+
+         
+    }
+
+    dt{
+        color: #2feb4e;
+        background-color: #eb2fac;
+        font-weight: bold;
+        padding: 5px;
+        padding-left: 10px;
+        
+    }
+    ol {
+        font-weight: bold;
+    }
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+main h1, main h2, main h3 {
+    
+    font-weight: 900;
+}
+
+#footer-bottom {
+    background-color:#ff9100;
+    color:  #fcff44; 
+    /* outline: 3px solid #EB3E2F; */
+    /* outline-offset: -1px; */
+    padding: 1em .5em;    
+    /* margin: 1em; */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    max-width: inherit;
+    min-width: inherit;
+    box-sizing: border-box;
+    
+}
+
+a{
+    color: #eb2fac;
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+}
+
+p {
+    font-size: 160%;
+    font-weight: 600;
+}
+
+#jump2 {
+    display: table;
+    background-color: #2feb4e;
+    padding: .25em .25em;
+}
+
+.float-img-left {
+    float: left;
+    width: 20%;
+    max-width: 301px;
+    height: auto;
+    margin-right: 1em;
+    margin-bottom: .25em;
+    
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+  
+}
+
+iframe {
+    width: 100%;
+    max-width: 850px;
+    height: 560px;
+    border: none;
+    
+
+}
+
+#art-grid {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+    #art-grid img {
+        width: 100%; /* Ensure images fill the grid cell */
+        height: auto; /* Maintain the aspect ratio of the images */
+    }
+    #nick_1c {
+        grid-row: 1;
+		grid-column: 1 / span 2;
+    }
+
+    #trash-chip {
+        grid-column: 3 / span 4;
+        grid-row: 1 / span 3;    
+    }
+
+    #Green-splash-chip {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 3;
+    }
+
+#drino_menu {
+
+
+    padding: 2em;
+    display: grid;
+    grid-template-columns: .5fr 1fr .25fr 1fr .25fr 1fr .5fr;
+    grid-template-rows: 4fr 1fr .25fr;
+    gap: 0px;
+    max-width: 60%;
+    margin: 0 auto;
+    
+    
+}
+
+    #drino_menu img {
+        width: 100%;
+        height: 100%;
+    
+    }
+    #pinkbox {
+        grid-row:1 / span 7;
+        grid-column: 1 / span 7;
+    }
+
+    #aboutbutt {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #artbutt {
+        grid-row: 2;
+        grid-column: 4;
+    }
+
+    #gamebutt {
+        grid-row: 2;
+        grid-column: 6;
+    }
+
+    .animate-butt:hover{
+        animation: rotateLink 3s forwards;
+    }
+
+    @keyframes rotateLink {
+        from {
+        
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(-30deg);
+        }
+
+        50% {
+        
+            transform: rotate(30deg);
+        }
+        to {
+            
+            transform: rotate(0deg);
+        }
+   
+    }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+        #nav{
+            font-size: .70em;
+            padding: 15px;   
+            text-align: left;
+            position: sticky;
+            top: 0;
+            background-color: #ff9100;
+        }
+        
+        
+        
+            #nav li{
+                display: inline;
+                margin-left: 15px;
+                margin-right: auto;
+                font-weight: bold;
+        
+            }
+
+    iframe {
+        width: 100%;
+        max-width: 470px; 
+        height: 200px;
+    }
+        
+}
